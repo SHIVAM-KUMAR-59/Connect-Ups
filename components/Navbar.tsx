@@ -10,8 +10,14 @@ const Navbar = async () => {
   return (
     <header className="px-5 py-3 bg-white shadow-sm font-work-sans">
       <nav className="flex justify-between items-center">
-        <Link href="/">
-          <Image src="/Logo.png" alt="logo" height={144} width={30} />
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/android-chrome-512x512.png"
+            alt="logo"
+            height={144}
+            width={30}
+          />
+          Connect-Ups
         </Link>
 
         <div className="flex items-center gap-5 text-black">

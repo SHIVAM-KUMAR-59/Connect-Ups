@@ -58,6 +58,10 @@ const workSans = localFont({
 export const metadata: Metadata = {
   title: 'Connect-Ups',
   description: 'Pitch, Vote and Grow',
+  icons: {
+    icon: { url: '/android-chrome-512x512.png', sizes: '128x128' },
+    apple: { url: '/android-chrome-512x512.png', sizes: '128x128' },
+  },
 }
 
 export default function RootLayout({
@@ -67,6 +71,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" />
+      </head>
       <body className={workSans.variable}>
         {children}
         <Toaster />
